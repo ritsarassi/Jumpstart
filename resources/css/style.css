@@ -8,6 +8,8 @@ html {
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* Navigation menu styles */
@@ -71,4 +73,8 @@ header a {
 
 .btn:active {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.image-container img {
+  opacity: 0.7;
 }
