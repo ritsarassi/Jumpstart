@@ -101,7 +101,7 @@ img {
 }
 
 .jumbotron p {
-  width: 51.3rem;
+  max-width: 51.3rem;
   margin: auto;
   padding-bottom: 2.8rem;
   color: #fff;
