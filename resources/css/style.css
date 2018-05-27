@@ -6,17 +6,6 @@ html {
   line-height: 1.4;
 }
 
-.container {
-  justify-content: center;
-  align-items: center;
-}
-
-.container-fluid {
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
 .image-container {
   overflow: hidden;
 }
@@ -58,12 +47,10 @@ img {
   font-weight: bold;
 }
 
-.navbar-default .navbar-nav .active a {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: inherit;
   color: #399bd1;
-}
-
-.navbar-default .navbar-nav .active a:hover {
-
 }
 
 /* Chance style for mobile */
@@ -80,8 +67,12 @@ img {
 /* Jumbotron styles */
 
 .jumbotron {
-  position: relative;
-  top: 4rem;
+  height: 44rem;
+  padding-top: 10rem;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .background-bike {
@@ -111,9 +102,12 @@ img {
 
 .jumbotron p {
   width: 51.3rem;
+  margin: auto;
   padding-bottom: 2.8rem;
   color: #fff;
 }
+
+/* change for mobile */
 
 @media only screen and (max-width: 767px) {
   .jumbotron span {
