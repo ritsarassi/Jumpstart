@@ -46,6 +46,9 @@ h2 {
   font-weight: bold;
 }
 
+img {
+  width: 100%;
+}
 
 /* Navigation menu styles */
 
@@ -66,31 +69,39 @@ h2 {
 /* Chance style for mobile */
 
 @media only screen and (max-width: 700px) {
-  .navbar-brand .navbar-right .navbar-collapse img {
+  .navigation img {
     display: none;
+  }
+  .navigation {
+    float: left;
   }
 }
 
 /* Jumbotron styles */
 
-.jumbotron-bike {
+.jumbotron {
+  position: relative;
+  top: 4rem;
+}
+
+.background-bike {
   background-image: url('../images/jumbotron-bike.jpg');
 }
 
-.jumbotron-beer {
+.background-beer {
   background-image: url('../images/jumbotron-beer.jpg');
 }
 
-.jumbotron-flowers {
+.background-flowers {
   background-image: url('../images/jumbotron-flowers.jpg');
 }
 
-.jumbotron-duffel {
+.background-duffel {
   background-image: url('../images/jumbotron-duffel.jpg');
 }
 
 .jumbotron span {
-  margin-top: 11.85rem;
+  padding-top: 11.85rem;
   width: 51.3rem;
   font-family: 'Monoton', cursive;
   font-size: 7.1rem;
@@ -102,6 +113,18 @@ h2 {
   width: 51.3rem;
   padding-bottom: 2.8rem;
   color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .jumbotron span {
+    font-size: 5.7rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .jumbotron span {
+    font-size: 4rem;
+  }
 }
 
 /* Button style */
